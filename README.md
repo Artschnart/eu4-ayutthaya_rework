@@ -1,2 +1,2 @@
-# eu4-ayutthaya_rework
-Ayutthaya rework for game Europa Universalis IV, a game by Paradox Interactive
+# eu4-ayutthaya
+A repostory submod for a nation of Ayutthaya in video game "Europa Universalis 4".

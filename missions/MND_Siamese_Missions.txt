@@ -1,0 +1,708 @@
+#### Slot 1 ####	
+AYUM_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = AYU
+			tag = SIA 
+		}
+	}
+## Slot 1 Hinterland Expansion ##
+	adopt_mandala_system = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	inherit_sukothai = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = {
+			adopt_mandala_system
+		  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	subjugate_lanna = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 3
+		required_missions = { 
+			inherit_sukothai
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	subjugate_shan_states = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 4
+		required_missions = { 
+			subjugate_lanna
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	bengal_incursion = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 5
+		required_missions = { 
+			subjugate_shan_states
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+}
+
+#### Slot 2 ####	
+AYUM_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = AYU
+		}
+	}
+## Slot 2 Hinterland Expansion ##
+	subjugate_pegu = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 1
+		required_missions = { 
+			adopt_mandala_system
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	intervention_in_burma = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = {
+			subjugate_pegu
+		  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	consolidate_burmese_land = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 3
+		required_missions = { 
+			intervention_in_burma
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	defy_china_ayum = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 4
+		required_missions = { 
+			subjugate_lanna
+			consolidate_burmese_land
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	protect_the_zhunge = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 5
+		required_missions = { 
+			defy_china_ayum
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	invade_southern_china = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 1
+		required_missions = { 
+			protect_the_zhunge
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	cross_the_yangtze_river = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 1
+		required_missions = { 
+			invade_southern_china
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+}
+#### Slot 3 ####	
+AYUM_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = AYU
+		}
+	}
+## Slot 3 Hinterland Expansion ##
+	crush_the_khmer = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			adopt_mandala_system
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	supremacy_over_lan_xang = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 3
+		required_missions = { 
+			crush_the_khmer
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	invade_dai_viet = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 4
+		required_missions = { 
+			supremacy_over_lan_xang
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+## Slot 3 Maritime Expansion ##
+	aceh_expedition = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 5
+		required_missions = { 
+			supremacy_over_lan_xang
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	conquer_sumatra = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 6
+		required_missions = { 
+			aceh_expedition
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	defy_the_majapahit = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 7
+		required_missions = { 
+			conquer_sumatra
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	master_of_nusantara = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 8
+		required_missions = { 
+			defy_the_majapahit
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+## Slot 3 Colonial Expansion ##	
+	charter_the_indian_ocean = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 9
+		required_missions = { 
+			andaman_expansion
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	east_african_trading_post = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 10
+		required_missions = { 
+			charter_the_indian_ocean
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}	
+}
+#### Slot 4 ####	
+AYUM_4 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = AYU
+		}
+	}
+## Slot 4 Hinterland ##
+	conquer_cham_tribes = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			crush_the_khmer
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	subjugate_champa = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			conquer_cham_tribes
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+## Slot 4 Maritime ##
+	integrate_ligor = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			adopt_mandala_system
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	invade_brunei = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			adopt_mandala_system
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	subjugate_sulu = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			invade_brunei
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	philippine_invasion = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			subjugate_sulu
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+## Slot 4 Colonial ##
+	andaman_expansion = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			adopt_mandala_system
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	colonize_papau = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			adopt_mandala_system
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	colonize_pacific_islands = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			adopt_mandala_system
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+	reach_the_new_world = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { 
+			colonize_pacific_islands
+		 }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			capital_scope = {
+				development = 35
+			}
+			OR = {
+				num_of_times_used_transfer_development = 2
+				capital_scope = { num_of_times_improved = 5 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+}

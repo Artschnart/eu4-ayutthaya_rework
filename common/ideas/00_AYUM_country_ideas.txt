@@ -1,0 +1,79 @@
+AYU_ideas_ayum = {
+	start = {
+		trade_efficiency = 0.2
+		galley_power = 0.15 
+	}
+	
+	bonus = {
+		diplomatic_annexation_cost = -0.15
+	}
+	
+	trigger = {
+		tag = AYU
+	}
+	free = yes
+	
+	ayum_hinterland_expansion = {
+		liberty_desire_from_subject_development = -0.20	
+		core_creation = -0.1		
+	}
+	ayum_elephant_supremacy = {
+		cavalry_power = 0.25	
+	}
+	ayum_chatusadom_ministry = {
+		advisor_cost = -0.15
+		nobles_loyalty_modifier	= 0.05
+		burghers_loyalty_modifier = 0.05
+	}
+	ayum_promote_trading_links = {
+		trade_steering = 0.15	
+	}
+	ayum_foreign_mercenaries = {
+		mil_tech_cost_modifier = -0.10
+		mercenary_discipline = 0.05		
+	}
+	ayum_embassies = {
+		improve_relation_modifier = 0.3
+	}
+	ayum_advance_fortification = {
+		defensiveness = 0.25
+	}
+}
+
+SIA_ideas = {
+	start = {
+		land_morale = 0.1
+		global_manpower_modifier = 0.3
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = SIA
+	}
+	free = yes
+	sia_royal_poets = {
+		prestige = 0.5
+		idea_cost = -0.1
+	}
+	sia_advanced_elephant_warfare = {
+		cavalry_power = 0.15
+		cavalry_fire = 1
+	}
+	sia_experienced_ambassadors = {
+		diplomatic_reputation = 2
+	}
+	sia_encourage_immigration = {
+		development_cost = -0.1
+	}
+	sia_integrating_the_realm = {
+		diplomatic_annexation_cost = -0.2
+	}
+	sia_education_reform = {
+		technology_cost = -0.1
+	}
+	sia_royal_absolutism = {
+		yearly_absolutism = 1
+		legitimacy = 1
+	}
+}
